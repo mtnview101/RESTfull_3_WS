@@ -1,0 +1,9 @@
+postalCode,radius,responseCode,vol1,vol2,vol3
+94066,1,400,Invalid value passed for radius.,,
+94066,5,200,1200 EL CAMINO REAL,COLMA,
+11111,5,200,0,0,0
+94043,5,200,350 SHOWERS DR,MOUNTAIN VIEW,
+94043,1,400,Invalid value passed for radius.,,
+94066,1,400,Invalid value passed for radius.,,
+94066,5,200,1200 EL CAMINO REAL,COLMA,
+11111,5,200,0,0,0

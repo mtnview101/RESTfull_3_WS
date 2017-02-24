@@ -1,0 +1,25 @@
+[    {
+       "postalCode": "94066",
+       "radius": 1,
+       "responseCode": 400,
+       "vol1": "Invalid value passed for radius.",
+       "vol2": "",
+       "vol3": ""
+     },
+     {
+       "postalCode": "94066",
+       "radius": 5,
+       "responseCode": 200,
+       "vol1": "1200 EL CAMINO REAL",
+       "vol2": "COLMA",
+       "vol3": ""
+     },
+     {
+       "postalCode": "11111",
+       "radius": 5,
+       "responseCode": 200,
+       "vol1": "0",
+       "vol2": "0",
+       "vol3": "0"
+     }]
+

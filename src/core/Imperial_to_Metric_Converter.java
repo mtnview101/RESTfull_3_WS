@@ -46,5 +46,39 @@ public class Imperial_to_Metric_Converter {
                    String lb_out = df.format(lb).toString();
                    return "{\"calc\": {\"conversion\": \"kg to lb\", \"kg\": " + kg_out + ", \"lb\": " + lb_out + "}}";
       }
+      
+      @GET
+      @Path("xml/lb=>kg/{input}")
+      @Produces("application/xml")
+      public String lb_to_kg_xml(
+      //Execute your web service in your browser: (http://localhost:89/RESTfull_3_WS/microsoft/xml/lb=>kg/100)
+                   @DefaultValue("1") 
+                   @PathParam("input") Double input) {
+                   Double lb = input;
+                   Double kg = lb * 0.4536;
+      
+                   String kg_out = df.format(kg).toString();
+                   String lb_out = df.format(lb).toString();
+            return "<calc conversion=\"lb to kg\">" + "<lb>" + lb_out + "</lb>" + "<kg>" + kg_out + "</kg>" + "</calc>";
+      }
+      
+      @GET
+      @Path("json/lb=>kg/{input}")
+      @Produces("application/json")
+      public String lb_to_kg_json(
+      //Execute your web service in your browser: (http://localhost:89/RESTfull_3_WS/microsoft/json/lb=>kg/100)
+                   @DefaultValue("1") 
+                   @PathParam("input") Double input) {
+		          Double lb = input;
+		          Double kg = lb * 0.4536;
+      
+                   String kg_out = df.format(kg).toString();
+                   String lb_out = df.format(lb).toString();
+                   return "{\"calc\": {\"conversion\": \"lb to kg\", \"lb\": " + lb_out + ", \"kg\": " + kg_out + "}}";
+      }  
+      
+      
+      
+      
 }
 
